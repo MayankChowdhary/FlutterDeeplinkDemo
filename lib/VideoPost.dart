@@ -38,7 +38,7 @@ class _VideoCardState extends State<VideoPost> {
   }
 
   void _shareVideo() {
-    Share.share("https://mayank-portfolio72.netlify.app/videopost");
+    Share.share("https://deeplink-helper.netlify.app/?tab=videopost");
   }
 
   void _togglePlayPause() {

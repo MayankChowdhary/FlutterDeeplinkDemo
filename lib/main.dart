@@ -84,14 +84,13 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _initDeepLinkListener()  {
        getInitialUri().then((value) =>
-            _handleDeepLink(value!.path),
+            _handleDeepLink(value?.queryParameters['tab']??"videopost"),
       );
   }
 
   void _handleDeepLink(String link) {
-    var deepLink = link.substring(1,link.length);
-    //showToast("Link: $deepLink");
-      _onTabTapped(_getSelectedWidget(deepLink)); // Update the deep link value
+   // showToast("Link: $link");
+      _onTabTapped(_getSelectedWidget(link)); // Update the deep link value
   }
 
   void showToast(String message) {

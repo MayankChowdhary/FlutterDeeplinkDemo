@@ -8,7 +8,7 @@ class ImagePost extends StatelessWidget {
   const ImagePost({super.key, required this.imageUrl});
 
   void _shareImage(BuildContext context) {
-    Share.share("https://mayank-portfolio72.netlify.app/imagepost");
+    Share.share("https://deeplink-helper.netlify.app/?tab=imagepost");
   }
 
   @override

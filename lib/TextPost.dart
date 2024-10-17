@@ -5,7 +5,7 @@ class TextPost extends StatelessWidget {
   const TextPost({super.key});
 
   void _shareText(BuildContext context, String text) {
-    Share.share("https://mayank-portfolio72.netlify.app/textpost");
+    Share.share("https://deeplink-helper.netlify.app/?tab=textpost");
   }
 
   @override
